@@ -7,8 +7,9 @@
 <script>
   let mdp = prompt("Entre le mot de passe secret :");
   if (mdp !== "22032010") {
-    alert("Mot de passe incorrect !");
-    window.location.reload();
+    alert("Accès refusé !");
+    document.documentElement.innerHTML = "";
+    window.location.replace("about:blank");
   }
 </script>
   <style>
