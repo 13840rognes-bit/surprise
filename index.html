@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pour ma princesse d'amour ❤️</title>
- <script>
+<script>
   let mdp = prompt("Entre le mot de passe secret :");
   if (mdp !== "22032010") {
-    document.body.innerHTML = "<h1 style='text-align:center; margin-top:20vh; color:white;'>Accès refusé ! 🛑 Recharge la page pour réessayer.</h1>";
-    throw new Error("Accès refusé");
+    alert("Mot de passe incorrect !");
+    window.location.reload();
   }
 </script>
   <style>
