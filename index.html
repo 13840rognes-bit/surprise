@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <script>
+  // Empêche le retour en arrière depuis le cache
+  window.addEventListener("pageshow", function (event) {
+    if (event.persisted) {
+      window.location.reload();
+    }
+  });
+
+  let mdp = prompt("Entre le mot de passe secret :");
+  if (mdp !== "22032010") {
+    alert("Accès refusé !");
+    document.documentElement.innerHTML = "";
+    window.location.replace("about:blank");
+    throw new Error("Arrêt du script");
+  }
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pour ma princesse d'amour ❤️</title>
